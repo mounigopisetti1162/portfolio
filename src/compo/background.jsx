@@ -38,9 +38,16 @@ export default function Background()
       <a className="nav-link" href="#scrollspyHeading1">Home</a>
     </li>
     <li className="nav-item">
-      <a className="nav-link" href="#scrollspyHeading2">About</a>
+      <a className="nav-link" href="#scrollspyHeading2">Skills</a>
     </li>
-    <li className="nav-item dropdown">
+    
+    <li className="nav-item">
+      <a className="nav-link" href="#scrollspyHeading3">Project</a>
+    </li>
+    <li className="nav-item">
+      <a className="nav-link" href="#scrollspyHeading4">Contact</a>
+    </li>
+    {/* <li className="nav-item dropdown">
       <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
       <ul className="dropdown-menu">
         <li><a className="dropdown-item" href="#scrollspyHeading3">Third</a></li>
@@ -48,7 +55,7 @@ export default function Background()
         <li><hr className="dropdown-divider"/></li>
         <li><a className="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
       </ul>
-    </li>
+    </li> */}
   </ul>
 </nav>
 <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example  p-3 rounded-2" tabindex="0">

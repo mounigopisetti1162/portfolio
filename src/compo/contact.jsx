@@ -3,10 +3,13 @@ import '../scss/contact.scss'
 import * as Yup from "yup";
 import { useState } from "react";
 import '../scss/about.scss'
-// import { Link, useNavigate } from "react-router-dom";
-// import { API } from "./global";
-import {  toast } from 'react-toastify';
 
+import '../scss/style.scss'
+import resume from '../resume/Resume.pdf'
+
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import FolderSpecialIcon from '@mui/icons-material/FolderSpecial';
 
 import { Formik, Form, Field, ErrorMessage, useFormik } from "formik";
 
@@ -61,7 +64,8 @@ function sendmail(values)
       // ScrollReveal().reveal('.contact',{delay:100,origin:'top'})
   return (
     <>
-     
+    <div>
+    
 
     <div className='container'>
     <h1 className='contact'>Contact Me Here😊</h1>
@@ -139,7 +143,7 @@ function sendmail(values)
           </div>
       
          
-      
+          <br></br>
           <button type="submit" className="btn btn-primary" 
           >
             Submit
@@ -148,9 +152,23 @@ function sendmail(values)
 
         </div>
       </Form>
+      <br></br>
+      <div className='icons'>
+  <div className='icon'>
+    <a href='https://github.com/mounigopisetti1162' target='_blank'>
+  <GitHubIcon sx={{ color: 'white', fontSize: 50 }} /></a>
+  <a href='https://www.linkedin.com/in/mouni-chinni-973712171/' target='_blank'>
+  <LinkedInIcon sx={{ color: 'white', fontSize: 60 }}/> </a>
+  <a href={resume} download='resume'>
+  <FolderSpecialIcon sx={{ color: 'white', fontSize: 60 }}/></a>
+   </div>
+  
+</div>
       </div>
       
       </Formik>
+      </div>
+     
       </div>
       </>
      
