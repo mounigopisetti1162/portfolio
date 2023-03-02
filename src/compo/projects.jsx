@@ -9,8 +9,8 @@ function Formrow()
 {
     return(
         <React.Fragment>
-<Grid item xs={5}>
-            <div className='img-overlay col-sm-2 '>
+<Grid item xs={6}>
+            <div className='img-overlay '>
         <span className='project' >Stack-OverFlow</span>
           <img  className='image' src={stack} alt='javascript'/>
           <div className='overlay'>
@@ -18,7 +18,7 @@ function Formrow()
           </div>
         </div>
         </Grid>
-        <Grid item xs={5}>
+        <Grid item xs={6}>
         <div className='img-overlay'>
         <span className='project'>URL-Shortner</span>
         <img className='image' src={url} alt='url-shrotner'/>
@@ -29,7 +29,7 @@ function Formrow()
         </div>
         </Grid>
 
-        <Grid item xs={5}>
+        <Grid item xs={6}>
         <div className='img-overlay'>
         <span className='project'>Student-Teacher</span>
 
@@ -57,8 +57,7 @@ function Projects() {
         <div className='project-headding'>
         <h2 className='project-heading'> Latest work</h2>
         <p className='project-para'>
-            these are the prsent working i am workin on whith which are still yet to be completed
-        </p>
+            These are the present work I have done by using all the skills which i have delepoed till now and also intrestted to develop new projects which are more advanced than these, an d the on going projects are still in process that will be added soon        </p>
         
         <div className='containers'>
         <Box sx={{ flexGrow: 1 }}>

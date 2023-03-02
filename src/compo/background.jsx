@@ -47,15 +47,7 @@ export default function Background()
     <li className="nav-item">
       <a className="nav-link" href="#scrollspyHeading4">Contact</a>
     </li>
-    {/* <li className="nav-item dropdown">
-      <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-      <ul className="dropdown-menu">
-        <li><a className="dropdown-item" href="#scrollspyHeading3">Third</a></li>
-        <li><a className="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
-        <li><hr className="dropdown-divider"/></li>
-        <li><a className="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
-      </ul>
-    </li> */}
+   
   </ul>
 </nav>
 <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example  p-3 rounded-2" tabindex="0">
@@ -64,7 +56,6 @@ export default function Background()
   <h4 id="scrollspyHeading1"></h4>
 <div className='typing'>
     <div className='wrapper'>
-        <div className='static-txt'></div>
         <ul className='dynamic-txt'>
             <li><span>Hi, I am mouni</span></li>
             <li><span>I am a frontend Developer</span></li>
@@ -78,11 +69,11 @@ export default function Background()
 <div className='icons'>
   <div className='icon'>
     <a href='https://github.com/mounigopisetti1162' target='_blank'>
-  <GitHubIcon sx={{ color: 'white', fontSize: 50 }} onClick={click1}/></a>
+  <GitHubIcon className='sym' sx={{ color: 'white', fontSize: 40 }} />GitHub</a>
   <a href='https://www.linkedin.com/in/mouni-chinni-973712171/' target='_blank'>
-  <LinkedInIcon sx={{ color: 'white', fontSize: 60 }}/> </a>
+  <LinkedInIcon className='sym' sx={{ color: 'white', fontSize: 40 }}/>LinkedIn </a>
   <a href={resume} download='resume'>
-  <FolderSpecialIcon sx={{ color: 'white', fontSize: 60 }}/></a>
+  <FolderSpecialIcon className='sym' sx={{ color: 'white', fontSize: 40 }}/> Resume</a>
    </div>
   
 </div>

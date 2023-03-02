@@ -100,11 +100,10 @@ export default function About()
     })
     ScrollReveal().reveal('.skills',{delay:200,})
     ScrollReveal().reveal('.about',{delay:200,origin:'left'})
-    // ScrollReveal().reveal('.moving-icons',{delay:500})
+    ScrollReveal().reveal('.moving-icons',{delay:500})
 
     return(
         <>
-        {/* <div  className="two"> */}
           
 <div className='skill-icon'>
   <div className='skills-icons'>
@@ -120,11 +119,10 @@ export default function About()
     </Box>
     </div>
     </div>
-    </div>
     <div className="about">
               <div className='abouts'>
                 <div className="heading">
-                    <h4>Aboute Me</h4>
+                    <div className='h3'>Aboute Me</div>
                 </div>
                     <div className='para'>
                     <p> I am 2022  passed out as i am passinated to develop my  made my dreams come true by knowing how the things work out, I enjoy solving complex problems. Frequently praised as detail-oriented by my peers, I can be relied upon to help your company achieve its goals by providing sustainable and scalable solutions. </p>
@@ -132,6 +130,8 @@ export default function About()
                 </div>
                 </div>
                 </div>
+    </div>
+    
    
             </>
     )

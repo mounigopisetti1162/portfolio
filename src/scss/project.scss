@@ -19,7 +19,7 @@
     color: aliceblue;
     // margin-bottom: 10rem;
     width: 100%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     align-items: center !important;
     justify-content: center !important;
     margin-top: 5rem;
@@ -32,28 +32,37 @@
     flex-direction: column;
     position:relative;
     width:80%;
+    margin-top: 0px;
     font-weight: 600;
-    
-    // gap: 2rem;
-    // font-size: rem;
     align-items: center;
     justify-content: center;
 }
 .project-heading{
-    font-size: 4rem;
-    background: linear-gradient(to right, #40e0d0 , #ff8c00, #ff0080 );
+    font-size: 3rem;
+    border-radius: 7px;
+    // background: linear-gradient(to right, #40e0d0 , #ff8c00, #ff0080 );
 
 
 }
 .project-para{
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: 900;
 }
 .image{
-    width: 100% !important;
-    height: 100% !important;
+    width: 120% !important;
+    height: 120% !important;
     border-radius: 7px;
     position: relative;
     overflow: hidden;
+    border-radius: 50px;
+}
+.img-overlay{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 .img-overlay .overlay{
     position: absolute;
@@ -75,17 +84,20 @@
     opacity: 0.8;
     cursor: pointer;
 }
-.img-overlay{
-    width: 100%;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-}
+
 .common-heading{
     margin: 0;
     color: aliceblue;
     text-decoration: none;
 
+}
+@media all and (max-width:600px) {
+    .project-heading{
+        font-size: 2rem !important;
+        margin-top: 0px;
+    }
+    .project-para{
+        font-size: 1rem;
+    font-weight: 900;
+    }
 }

@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    font-family: 'poppins',sans-serif;
+    font-family: 'Satisfy', cursive;
+
 }
 body{
     background: #0a2a43;
@@ -16,25 +19,30 @@ body{
 #navbar-example2{
     background: #c3d1dc ;
 }
+.navbar-brand{
+    font-size: large;
+}
 .nav-pills{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 100px;
+    gap: 25px;
+    // font-size: small;
 }
 .nav-link{
-    font-size: x-large;
+    font-size: large;
 }
 .nav-link:hover{
     color: #fff;
-    font-size: xx-large;
+    font-size: large;
     box-shadow:0px 2px 0px 0px #fff;
     border-radius: 40%;
 
 }
 section{
+    margin-top: 0px !important;
     position: relative;
     width: 100%;
     height: 100vh;
@@ -51,6 +59,14 @@ section:before{
     height: 100px;
     background: linear-gradient(to top, #0a2a43,transparent);
     z-index: 10000;
+}
+.icon a{
+    text-decoration: none;
+    font-size: smaller;
+    color: beige;
+}
+.icon a:hover{
+    color: #fff;
 }
 section:after{
     content: '';
@@ -87,12 +103,15 @@ object-fit: contain;
 
 .typing{
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    // width: 200%;
     // min-height: 100vh;
 }
 .wrapper{
     display: inline-flex;
+    width: 50%;
 }
 .wrapper .static-txt{
     color: #fff;
@@ -101,6 +120,7 @@ object-fit: contain;
 }
 .wrapper .dynamic-txt{
 margin-left: 15px;
+width: 100%;
 height: 90px;
 line-height: 90px;
 //    background-color: red;
@@ -161,9 +181,35 @@ overflow: hidden;
     // word-spacing: 10px;
     
 }
-.icon :hover{
+.icon .sym :hover{
     cursor: pointer;
     color: rgb(31, 29, 29);
     background-color: #fff;
     border-radius: 50%;
+}
+@media all and (max-width:600px)
+{
+    #navbar-example2{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-brand{
+        display: none;
+        // gap:1px
+    }
+    .nav-pills{
+        gap:10px
+    }
+    .wrapper .dynamic-txt{
+display: none;
+    }
+    .icons{
+        width:100%;
+        margin-bottom: 0px;
+    }
+   #text{
+    font-size: 40px;   }
+       
 }

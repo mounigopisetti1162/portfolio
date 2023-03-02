@@ -45,3 +45,29 @@ label.label{
 .is-danger,.label{
     color: aliceblue;
 }
+@media all and (max-width:600px) {
+    .container{
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    input.input{
+        height: 40px;
+        width: 200px;
+        font-size: 1.5rem;
+    margin-left: 50px;
+        // margin: 2px 2px;
+    }
+    .label{
+        margin-left: 50px;
+    }
+    .btn{
+        margin-left: 50px;
+    }
+    
+}
