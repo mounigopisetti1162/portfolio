@@ -84,7 +84,7 @@ export default function Background()
         <img src="moon.png" id='moon'/>
         <img src="mountain.png" id='mountain'/>   
         <img src="road.png" id='road'/>
-        <h2 id='text' >Mounis's Portfolio</h2>
+        <div id='text' >Mounis's Portfolio</div>
     </section>
 
     <h4 id="scrollspyHeading2"></h4>
