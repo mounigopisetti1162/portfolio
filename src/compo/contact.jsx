@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../scss/contact.scss'
 import * as Yup from "yup";
 import { useState } from "react";
@@ -54,14 +54,14 @@ function sendmail(values)
 }
   
     const renderError = (message) => <p className="help is-danger">{message}</p>;
-  
+  useEffect(()=>{
     ScrollReveal({
       reset:true,distance:'60px',duration:2500,delay:400
       })
       ScrollReveal().reveal('.container',{delay:300,origin:'left'})
 
-      ScrollReveal().reveal('.abouts',{delay:400,origin:'bottom'})
       // ScrollReveal().reveal('.contact',{delay:100,origin:'top'})
+  },[])
   return (
     <>
     <div>

@@ -11,6 +11,7 @@ import s3 from '../assets/icons/s3.svg'
 import vercel from '../assets/icons/vercel.svg'
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
+import { useEffect } from 'react';
 
 function FormRow1() {
     return (
@@ -95,13 +96,17 @@ function FormRow1() {
   
 export default function About()
 {
+  useEffect(()=>{
   ScrollReveal({
     reset:true,distance:'60px',duration:2500,delay:400
     })
-    ScrollReveal().reveal('.skills',{delay:200,})
-    ScrollReveal().reveal('.about',{delay:200,origin:'left'})
-    ScrollReveal().reveal('.moving-icons',{delay:500})
-
+    ScrollReveal().reveal('.skills-icons',{delay:200,origin:'bottom'})
+    ScrollReveal().reveal('.skills',{delay:200,origin:'top'})
+    ScrollReveal().reveal('.about',{delay:300,origin:'right'})
+    ScrollReveal().reveal('.h3',{delay:300,origin:'left'})
+    ScrollReveal().reveal('.para',{delay:400,origin:'right'})
+    // ScrollReveal().reveal('.moving-icons',{delay:500})
+  },[])
     return(
         <>
           

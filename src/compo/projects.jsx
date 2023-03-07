@@ -5,6 +5,7 @@ import stack from '../assets/project/stack.png'
 import url from '../assets/project/url-shrotner.png'
 import stu from '../assets/project/stu-tea.png'
 import '../scss/project.scss'
+import { useEffect } from 'react';
 function Formrow()
 {
     return(
@@ -44,13 +45,16 @@ function Formrow()
     )
 }
 function Projects() {
+  useEffect(()=>{
+
+
     ScrollReveal({
-        reset:true,distance:'60px',duration:2500,delay:400
+        reset:true,distance:'60px',duration:3000,delay:400
         })
-        ScrollReveal().reveal('.project-heading',{delay:200,origin:'right'})
+        ScrollReveal().reveal('.project-heading',{delay:300,origin:'right'})
         ScrollReveal().reveal('.project-para',{delay:300,origin:'left'})
         ScrollReveal().reveal('.containers',{delay:400,origin:'top'})
-   
+      },[])
   return (
 
     <div className='project'>

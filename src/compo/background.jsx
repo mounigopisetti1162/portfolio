@@ -14,6 +14,9 @@ export default function Background()
     // console.log("fdgkjdfn")
    <link rel="stylesheet" href="www.google.com" />
   }
+  const onScroll=()=>{
+
+  }
 
     window.addEventListener('scroll',function()
     {
@@ -25,9 +28,7 @@ export default function Background()
         text.style.top=value*1+'px'
 
     })
-    const onScroll=()=>{
-
-    }
+   
     return(
 
     <>
@@ -57,10 +58,10 @@ export default function Background()
 <div className='typing'>
     <div className='wrapper'>
         <ul className='dynamic-txt'>
-            <li><span>Hi, I am mouni</span></li>
-            <li><span>I am a frontend Developer</span></li>
-            <li><span>I am a  Backend-Developer</span></li>
-            <li><span>and belive to achive more</span></li>
+            <li><span className='list'>Hi, I am mouni</span></li>
+            <li><span className='list'>I am a frontend Developer</span></li>
+            <li><span className='list'>I am a  Backend-Developer</span></li>
+            <li><span className='list'>and belive to achive more</span></li>
         </ul>
 
     </div>
@@ -79,7 +80,7 @@ export default function Background()
 </div>
 
         
-    <section onScroll={onScroll}>
+    <section >
         <img src="bg.jpg" id='bg'/>
         <img src="moon.png" id='moon'/>
         <img src="mountain.png" id='mountain'/>   

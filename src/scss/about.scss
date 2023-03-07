@@ -21,7 +21,9 @@ flex-wrap: wrap;
 align-items: center;
 justify-content: center;
 font-size: medium;
-max-width: 80%;
+max-width: 70%;
+font-family: 'Satisfy', cursive !important;
+
       }
       
 .heading{
@@ -40,11 +42,12 @@ max-width: 80%;
    
 
 
-.para{
+.para p{
     display: contents;
     align-items: center;
     justify-content: center;
     overflow-wrap: initial;
+    font-family: 'Satisfy', cursive !important;
 
     display: flex;
     font-size: 1.5rem;
