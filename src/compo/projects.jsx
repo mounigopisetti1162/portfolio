@@ -4,12 +4,24 @@ import Box from '@mui/material/Box';
 import stack from '../assets/project/stack.png'
 import url from '../assets/project/url-shrotner.png'
 import stu from '../assets/project/stu-tea.png'
+import infi from '../assets/project/infi.png'
 import '../scss/project.scss'
 import { useEffect } from 'react';
 function Formrow()
 {
     return(
         <React.Fragment>
+   <Grid item xs={6}>
+        <div className='img-overlay'>
+        <span className='project'>InFi Chat</span>
+
+        <img className='image' src={infi} alt='student'/>
+        <div className='overlay'>
+            <a href='https://magnificent-kashata-c33ff9.netlify.app/' target='_blank' className='common-heading'>InFi Chat</a>
+          </div>
+        </div>
+        </Grid>
+
 <Grid item xs={6}>
             <div className='img-overlay '>
         <span className='project' >Stack-OverFlow</span>
@@ -36,10 +48,12 @@ function Formrow()
 
         <img className='image' src={stu} alt='student'/>
         <div className='overlay'>
-            <a href='https://animated-sunburst-1a76c7.netlify.app/' target='_blank' className='common-heading'>Stack Overflow</a>
+            <a href='https://animated-sunburst-1a76c7.netlify.app/' target='_blank' className='common-heading'>Student-Teacher</a>
           </div>
         </div>
         </Grid>
+
+     
 
         </React.Fragment>
     )

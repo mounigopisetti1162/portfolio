@@ -33,7 +33,7 @@ export default function Background()
 
     <>
      <nav id="navbar-example2" className="navbar px-3 mb-3">
-  <a className="navbar-brand" href="#">MOUNI</a>
+  <a className="navbar-brand" href="#">MOUNI Gopisetti</a>
   <ul className="nav nav-pills">
     <li class="nav-item">
       <a className="nav-link" href="#scrollspyHeading1">Home</a>
@@ -79,7 +79,7 @@ export default function Background()
   
 </div>
 
-        
+     <div className="section">
     <section >
         <img src="bg.jpg" id='bg'/>
         <img src="moon.png" id='moon'/>
@@ -87,6 +87,7 @@ export default function Background()
         <img src="road.png" id='road'/>
         <div id='text' >Mounis's Portfolio</div>
     </section>
+      </div>   
 
     <h4 id="scrollspyHeading2"></h4>
     <About/>
