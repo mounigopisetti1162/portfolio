@@ -69,7 +69,7 @@ margin-top: 10px;
 }
 .image{
     width: 100% !important;
-    height: 80% !important;
+    height: 100% !important;
   
     position: relative;
     border-radius: 10px;
@@ -96,7 +96,7 @@ margin-top: 10px;
     position: absolute;
    
     width: 100% !important;
-height: 80% !important;
+height: 100% !important;
   
     background-repeat: no-repeat;
     background-position: center;
@@ -107,13 +107,13 @@ height: 80% !important;
     background-size: cover;
     // opacity: 0.8;
     background-color: rgb(77, 77, 77,0.8);
-    background: linear-gradient( rgb(143, 203, 243,0.8),  rgb(235, 122, 235,0.8),rgb(247, 136, 145,0.8));
+    background: linear-gradient( rgb(143, 203, 243,0.6),  rgb(235, 122, 235,0.6),rgb(247, 136, 145,0.6));
     
     
     
-
+font-size: larger;
     z-index: -1;
-    transition: all 0.6s linear;
+    transition: all 0.4s linear;
     border-radius: 7px;
     clip-path: circle(0% at 0 0);
     // clip-path: ellipse(0% at 0 0);
@@ -177,6 +177,7 @@ height: 80% !important;
     display: flex;
     gap: 10px !important;
     align-items: center;
+    font-size: larger !important;
 
 }
 
@@ -185,17 +186,77 @@ height: 80% !important;
     margin: 0;
     color: rgb(0, 0, 0);
     text-decoration: none;
-    font-size: medium;
+    font-size: 30px;
     // opacity: 1 !important;
 
 }
-@media all and (max-width:600px) {
+@media all and (max-width:960px) {
     .project-heading{
-        font-size: 2rem !important;
+        font-size: 3rem !important;
         margin-top: 0px;
     }
     .project-para{
-        font-size: 1rem;
+        font-size: 1.5rem !important;
     font-weight: 900;
+    }
+    .project{
+        font-size: 1.2rem;
+    }
+    .image{
+        // width: 210px !important;
+    }
+    .m-icons{
+        width: 20px;
+        height: 20px;
+    }
+    .common-heading{
+        margin-left: 5px;
+        margin-right: 5px;
+        margin: 0;
+        color: #ffffff;
+        text-decoration: none;
+    font-size: 20px;
+
+        // font-size: medium;
+        // opacity: 1 !important;
+    
+    }
+    .eye{
+        font-size: 30px !important;
+    }
+    .git{
+        font-size: 30px !important;
+
+    }
+}
+
+@media all and (max-width:680px) {
+    .m-icons{
+        width: 15px;
+        height: 15px;
+    }
+    .project-heading{
+        font-size: 2.5rem !important;
+        margin-top: 0px;
+    }
+    .common-heading{
+        margin-left: 5px;
+        margin-right: 5px;
+        margin: 0;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 15px;
+        // opacity: 1 !important;
+    
+    }
+    .in-icons{
+        gap: 5px;
+    }
+    .eye{
+        font-size: 25px !important;
+    }
+    .git{
+        font-size: 25px !important;
+
     }
 }

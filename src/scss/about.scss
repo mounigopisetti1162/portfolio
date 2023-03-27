@@ -59,8 +59,10 @@ margin-top: 10px;
 }
 .name{
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 600;
+  align-items: center !important;
+  justify-content: center !important;
 }
 .skill-icon{
   display: flex;
@@ -91,28 +93,30 @@ margin-top: 10px;
 .space{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: center !important;
+  justify-content: center !important;
 }
 .scroll{
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  align-items: center;
-  justify-content: center;
+  align-items: center !important;
+  justify-content: center !important;
 }
 .moving-icons{
   width: 80px;
   height: 80px;
   transform: perspective(25px) rotateX(0deg) rotateY(0deg) scale(1);
   transition: all 1s ease;
+  align-items: center !important;
+  justify-content: center !important;
 }
 .moving-icons:hover{
   // transform: perspective(40px) rotateX(-0.6deg) rotateY(-0.5deg) scale(1.5);
   transform: rotate3d(1,1.5,0,20deg) scale(1.5);
   
 }
-@media all and (max-width:900px)
+@media all and (max-width:960px)
 {
   .skill-icon{
     display: flex;
@@ -129,10 +133,16 @@ margin-top: 10px;
     justify-content: center;
   }
   .skills{
-    font-size: 1.5rem;
+    font-size: 3rem;
     color: #fff;
     margin-bottom: 2rem;
     font-weight: 600;
+  }
+  .space{
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
   }
   .scroll{
     display: flex;
@@ -149,28 +159,44 @@ margin-top: 10px;
     align-items: center !important;
     justify-content: center !important;
   }
-  .space{
-    align-items: center !important;
-    justify-content: center;
-  }
+
   .name{
-    width: 20%;
-    // font-size: 1px !important;
-    font-weight: 300;
+    
+    font-weight: 600;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 1.3rem;
   }
 
 .heading .h3{
-  font-size: 2rem !important;
+  font-size: 3rem !important;
   font-family: 'Finger Paint',cursive;
 
 
 }
-.para{
-  font-size: 1rem;
+.para p{
+  font-size: 1.5rem;
     font-weight: 900;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 0;
+    margin-bottom: 30px;
 }
+}
+@media all and (max-width:680px)
+{
+  .heading .h3{
+    font-size: 2.3rem !important;
+    font-family: 'Finger Paint',cursive;
+  }
+  .para p{
+    font-size: 1.2rem !important;
+  }
+  .skills{
+    font-size: 2.3rem ;
+  }
+  .moving-icons{
+    width: 80%;
+    // height: 80%;
+  }
 }

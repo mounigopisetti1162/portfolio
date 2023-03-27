@@ -4,8 +4,11 @@
     box-sizing: border-box;
     font-family: 'poppins','sans-serif';
 }
-.container{
+.con{
     width: 100%;
+}
+.container{
+    width: 80%;
     height: 100vh;
     // background:#0a2a43;
     display: flex;
@@ -20,6 +23,18 @@
         // filter: blur(4px);
       
 
+}
+.ener{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.energy{
+    color: aliceblue;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
 }
 .field{
     // max-width: 200px !important;
@@ -45,7 +60,7 @@ label.label{
 .is-danger,.label{
     color: aliceblue;
 }
-@media all and (max-width:600px) {
+@media all and (max-width:960px) {
     .container{
         width: 80%;
         align-items: center;
@@ -57,8 +72,8 @@ label.label{
         justify-content: center;
     }
     input.input{
-        height: 40px;
-        width: 200px;
+        height: 50px;
+        width: 300px;
         font-size: 1.5rem;
     margin-left: 50px;
         // margin: 2px 2px;
@@ -69,5 +84,7 @@ label.label{
     .btn{
         margin-left: 50px;
     }
-    
+    .icon{
+        gap: 20px;
+    }
 }

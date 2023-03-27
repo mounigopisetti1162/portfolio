@@ -5,8 +5,11 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FolderSpecialIcon from '@mui/icons-material/FolderSpecial';
 import resume from '../resume/Resume.pdf'
 import About from './About';
+import {motion} from 'framer-motion'
+
 import Contact from './contact';
 import Projects from './projects';
+import { useState } from 'react';
 export default function Background()
 {
   // const nav=useNavigate()
@@ -14,6 +17,7 @@ export default function Background()
     // console.log("fdgkjdfn")
    <link rel="stylesheet" href="www.google.com" />
   }
+  const [move,setmove]=useState(false)
   const onScroll=()=>{
 
   }
@@ -32,11 +36,15 @@ export default function Background()
     return(
 
     <>
-    <div className="nav">
+    <div className="navb">
 
    
      <nav id="navbar-example2" className="navbar px-3 mb-3">
+      <div className="mouni">
+        
   <a className="navbar-brand" href="#">MOUNI Gopisetti</a>
+      </div>
+
   <ul className="nav nav-pills">
     <li class="nav-item">
       <a className="nav-link" href="#scrollspyHeading1">Home</a>
@@ -91,6 +99,17 @@ export default function Background()
         <img src="road.png" id='road'/>
         <div id='text' >Mounis's Portfolio</div>
     </section>
+  
+    {/* <div className="dog">
+    <motion.div animate={{ y: -100 }} /> */}
+
+ {/* {{x:move ? 200: -200}} 
+ transition={{type:"tween"}}
+onClick={()=>{
+  setmove(!move)}}>
+  
+  </motion.div> */}
+    {/* </div> */}
       </div>   
 
     <h4 id="scrollspyHeading2"></h4>

@@ -64,7 +64,7 @@ function sendmail(values)
   },[])
   return (
     <>
-    <div>
+    <div className='con'>
     
 
     <div className='container'>
@@ -161,8 +161,19 @@ function sendmail(values)
   <LinkedInIcon sx={{ color: 'white', fontSize: 60 }}/> </a>
   <a href={resume} download='resume'>
   <FolderSpecialIcon sx={{ color: 'white', fontSize: 60 }}/></a>
+  <br/>
+  <br></br>
+  
    </div>
   
+</div>
+<div className="ener">
+
+
+<p className='energy'>
+  
+Made with energy😍
+   </p>
 </div>
       </div>
       
@@ -170,6 +181,14 @@ function sendmail(values)
       </div>
      
       </div>
+      {/* <div className="footer">
+        <div className="foot">
+
+
+        </div>
+      </div> */}
+
+      
       </>
      
     

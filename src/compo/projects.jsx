@@ -39,10 +39,10 @@ function Formrow()
             <div className='in-names'>
             <div className='in-name'>
          
-            <a href='https://magnificent-kashata-c33ff9.netlify.app/' target='_blank' className='common-heading'>  <RemoveRedEyeIcon fontSize='large' 
+            <a href='https://magnificent-kashata-c33ff9.netlify.app/' target='_blank' className='common-heading'>  <RemoveRedEyeIcon className="eye" fontSize='large' 
            /> Infi Chat</a>
            <a href='https://github.com/mounigopisetti1162/capstone' target='_blank' className='common-heading'>
-            <GitHubIcon fontSize='large' /></a>
+            <GitHubIcon className="git" fontSize='large' /></a>
             </div>
             </div>
           </div>
@@ -59,7 +59,7 @@ function Formrow()
             </div>
             </div>
           </div>
-        </div>
+        </div>   
         </Grid>
 
 <Grid item xs={6} className='gride'>
@@ -72,10 +72,10 @@ function Formrow()
 <div className='in-names'>
 <div className='in-name'>
 
-<a href='https://cute-boba-723607.netlify.app/' target='_blank' className='common-heading'> <RemoveRedEyeIcon fontSize='large' 
+<a href='https://cute-boba-723607.netlify.app/' target='_blank' className='common-heading'> <RemoveRedEyeIcon className="eye" fontSize='large' 
 />Stack Overflow </a>
 <a href='https://github.com/mounigopisetti1162/stack-webcode' target='_blank' className='common-heading'>
-<GitHubIcon fontSize='large' /></a>
+<GitHubIcon className="git" fontSize='large' /></a>
 
 
 </div>
@@ -97,7 +97,7 @@ function Formrow()
           </div>
         </div>
         </Grid>
-
+      
         <Grid item xs={6} className='gride'>
         <span className='project'>URL-Shortner</span>
         <div className='img-overlay'>
@@ -108,10 +108,10 @@ function Formrow()
 <div className='in-names'>
 <div className='in-name'>
 
-<a href='https://nimble-custard-91ad31.netlify.app/' target='_blank' className='common-heading'><RemoveRedEyeIcon fontSize='large' 
+<a href='https://nimble-custard-91ad31.netlify.app/' target='_blank' className='common-heading'><RemoveRedEyeIcon className="eye" fontSize='large' 
 />URL- Shortner</a>
 <a href='https://github.com/mounigopisetti1162/stack-webcode' target='_blank' className='common-heading'>
-<GitHubIcon fontSize='large' /></a>
+<GitHubIcon className="git" fontSize='large' /></a>
 
 
 </div>
@@ -139,7 +139,7 @@ function Formrow()
 
 
         </Grid>
-
+  
         <Grid item xs={6} className='gride'>
         <span className='project'>Student-Teacher</span>
         <div className='img-overlay'>
@@ -151,10 +151,10 @@ function Formrow()
 <div className='in-names'>
 <div className='in-name'>
 
-<a href='https://animated-sunburst-1a76c7.netlify.app/' target='_blank' className='common-heading'> <RemoveRedEyeIcon fontSize='large' 
+<a href='https://animated-sunburst-1a76c7.netlify.app/' target='_blank' className='common-heading'> <RemoveRedEyeIcon className="eye" fontSize='large' 
 />Student-Teacher </a>
 <a href='https://github.com/mounigopisetti1162/stack-webcode' target='_blank' className='common-heading'>
-<GitHubIcon fontSize='large' /></a>
+<GitHubIcon className="git" fontSize='large' /></a>
 
 
 </div>
@@ -172,9 +172,9 @@ function Formrow()
             </div>
             
           </div>
-        </div>
+        </div>    
         </Grid>
-
+    
      
 
         </React.Fragment>
