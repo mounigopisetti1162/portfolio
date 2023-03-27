@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Kolker+Brush&family=Open+Sans:wght@300;400;500;800&family=Roboto+Slab:wght@400;500&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,500&display=swap');
 .about{
     // position: relative;
     width: 100%;
@@ -31,12 +31,15 @@ font-family: 'Satisfy', cursive !important;
 }
 .heading .h3{
     // background: linear-gradient(red,blue);
-    color: #fff;
+    // color:linear-gradient(to right, #40e0d0 , #ff8c00, #ff0080);
+color: rgb(255, 255, 255);
     background: linear-gradient(to right, #40e0d0 , #ff8c00, #ff0080 );
     font-size: 3rem !important;
     font-weight: 800;
     border-radius: 10px;
     transition: all 0.4s ease;
+  font-family: Finger Paint,cursive;
+
       }
      
    
@@ -48,7 +51,7 @@ font-family: 'Satisfy', cursive !important;
     justify-content: center;
     overflow-wrap: initial;
     font-family: 'Satisfy', cursive !important;
-
+margin-top: 10px;
     display: flex;
     font-size: 1.5rem;
     font-weight: 900;
@@ -56,14 +59,14 @@ font-family: 'Satisfy', cursive !important;
 }
 .name{
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 .skill-icon{
   display: flex;
   margin-top: 10rem;
   // margin-bottom: 10rem;
-  flex-direction: column;
+  flex-direction: row;
     align-items: center;
     justify-content: center ;
     width: 100%;
@@ -76,10 +79,14 @@ font-family: 'Satisfy', cursive !important;
   justify-content: center;
 }
 .skills{
-  font-size: 2.5rem;
+  font-family: 'Finger Paint',cursive;
+    font-size: 3.5rem;
+    margin-bottom: 0.8rem;
+    line-height: 1;
+  // font-size: 2.5rem;
   color: #fff;
-  margin-bottom: 4rem;
-  font-weight: 600;
+  // margin-bottom: 4rem;
+  // font-weight: 600;
 }
 .space{
   display: flex;
@@ -95,17 +102,17 @@ font-family: 'Satisfy', cursive !important;
   justify-content: center;
 }
 .moving-icons{
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   transform: perspective(25px) rotateX(0deg) rotateY(0deg) scale(1);
   transition: all 1s ease;
 }
-img:hover{
+.moving-icons:hover{
   // transform: perspective(40px) rotateX(-0.6deg) rotateY(-0.5deg) scale(1.5);
   transform: rotate3d(1,1.5,0,20deg) scale(1.5);
   
 }
-@media all and (max-width:600px)
+@media all and (max-width:900px)
 {
   .skill-icon{
     display: flex;
@@ -137,8 +144,8 @@ img:hover{
   .moving-icons{
     display: flex;
     flex-direction: column !important;
-    width: 50% !important;
-    height: 50% !important;
+    // width: 50% !important;
+    // height: 50% !important;
     align-items: center !important;
     justify-content: center !important;
   }
@@ -148,12 +155,14 @@ img:hover{
   }
   .name{
     width: 20%;
-    font-size: large;
+    // font-size: 1px !important;
     font-weight: 300;
   }
 
 .heading .h3{
   font-size: 2rem !important;
+  font-family: 'Finger Paint',cursive;
+
 
 }
 .para{

@@ -1,5 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Courgette&family=Delicious+Handrawn&family=Lobster&family=Rampart+One&family=Satisfy&family=Tilt+Prism&display=swap');
 .grid-three-coloumn{
     grid-template-columns: repeat(4,1fr);
+}
+
+.projects-all{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.grid{
+    display: flex;
+    
 }
 .section-project
 {
@@ -9,7 +21,7 @@
 .containers{
     margin: 10px 10px 10px 10px;
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
     display: flex;
     flex-direction: column;
 }
@@ -25,6 +37,7 @@
     margin-top: 5rem;
     // gap: 2rem;
     width: 100%;
+    margin-bottom: 10px;
     
 }
 .project-headding{
@@ -39,7 +52,8 @@
 }
 .project-heading{
     font-size: 3rem;
-    border-radius: 7px;
+    // border-radius: 7px;
+  font-family: Finger Paint,cursive;
     // background: linear-gradient(to right, #40e0d0 , #ff8c00, #ff0080 );
 
 
@@ -47,48 +61,132 @@
 .project-para{
     font-size: 1.5rem;
     font-weight: 900;
+color: rgb(255, 255, 255);
+// font-family: 'Alkatra', cursive;
+font-family: 'Satisfy', cursive !important;
+margin-top: 10px;
+
 }
 .image{
-    width: 120% !important;
-    height: 120% !important;
-    border-radius: 7px;
+    width: 100% !important;
+    height: 80% !important;
+  
     position: relative;
-    overflow: hidden;
-    border-radius: 50px;
+    border-radius: 10px;
+}
+.grid{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 106px !important;
+    margin-bottom: 60px !important;
+    overflow-y: scroll;
+
 }
 .img-overlay{
     width: 100%;
     height: 100%;
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
     display: flex;
-    flex-direction: column;
+    // display: none;
+    // flex-direction: column;
 }
  .overlay{
     position: absolute;
-    top: 100px;;
-    left:0; 
-    width: 100%;
-    height: 80%;
-    background: linear-gradient(rgb(89, 200, 245),rgb(243, 90, 235));
-    opacity: 0;
+   
+    width: 100% !important;
+height: 80% !important;
+  
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: translateY(100%);
-    transition: all 0.3s linear;
+    background-size: cover;
+    // opacity: 0.8;
+    background-color: rgb(77, 77, 77,0.8);
+    background: linear-gradient( rgb(143, 203, 243,0.8),  rgb(235, 122, 235,0.8),rgb(247, 136, 145,0.8));
+    
+    
+    
+
+    z-index: -1;
+    transition: all 0.6s linear;
     border-radius: 7px;
+    clip-path: circle(0% at 0 0);
+    // clip-path: ellipse(0% at 0 0);
+    // clip-path: elipse(0% at 0 0);
 }
 .img-overlay:hover >.overlay{
+    z-index: 1;
+    clip-path: circle(150% at 0 0 );
+    // clip-path: ellipse(100% at 0 0);
+
+    // transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    color: black;
     transform: translateY(0);
-    opacity: 0.8;
+    // transform: ;
+//   transform: rotate3d(1,1.5,0,20deg) scale(1.5);
+// background-blend-mode: color;
+    // opacity: 0.8;
     cursor: pointer;
 }
+.inside{
+    display: flex;
+    flex-direction: row;
+    color: rgb(0, 0, 0) !important;
+    gap: 10px;
+    // align-items: last baseline;
+    width: 100% !important;
+    height: 100% !important;
+    justify-content: flex-end !important;
+}
+.inside >a{
+    color: rgb(0, 0, 0) !important;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+}
+.inside-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: last baseline !important;
+    justify-content: flex-end !important;
+    // align-items: last baseline;
+    margin-bottom: 10px;
+}
+.in-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: last baseline;
+    justify-content: flex-end;
+    vertical-align: bottom !important;
+
+}
+.in-names{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    // justify-content: flex-start;
+}
+.in-name{
+    display: flex;
+    gap: 10px !important;
+    align-items: center;
+
+}
+
 
 .common-heading{
     margin: 0;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     text-decoration: none;
+    font-size: medium;
+    // opacity: 1 !important;
 
 }
 @media all and (max-width:600px) {

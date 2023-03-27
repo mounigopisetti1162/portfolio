@@ -9,6 +9,9 @@ import react from '../assets/react.svg'
 import redux from '../assets/icons/redux.svg'
 import s3 from '../assets/icons/s3.svg'
 import vercel from '../assets/icons/vercel.svg'
+import css from '../assets/icons/css.jpg'
+import socket from '../assets/icons/socket.png'
+import html from '../assets/icons/html.png'
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import { useEffect } from 'react';
@@ -22,6 +25,20 @@ function FormRow1() {
 
         <span className='name' >Javascript</span>
           <img className='moving-icons' height="100" width='100' src={javascript} alt='javascript'/>
+       </div>
+        </Grid>
+        <Grid item xs={4} className='space'>
+        <div className='scroll'>
+
+        <span className='name'>CSS</span>
+        <img className='moving-icons' height="100" width='100' src={css} alt='bootstrap'/>
+          </div>
+        </Grid>
+        <Grid item xs={4} className='space'>
+        <div className='scroll'>
+
+        <span className='name' >HTML</span>
+          <img className='moving-icons' height="100" width='100' src={html} alt='javascript'/>
        </div>
         </Grid>
         <Grid item xs={4} className='space'>
@@ -76,6 +93,14 @@ function FormRow1() {
         <Grid item xs={4} className='space'>
         <div className='scroll'>
 
+        <span className='name' >socket</span>
+
+        <img className='moving-icons' height="100" width='100' src={socket} alt='s3'/>
+       </div>
+        </Grid>
+        <Grid item xs={4} className='space'>
+        <div className='scroll'>
+
         <span className='name' >s3</span>
 
         <img className='moving-icons' height="100" width='100' src={s3} alt='s3'/>
@@ -111,6 +136,17 @@ export default function About()
         <>
           
 <div className='skill-icon'>
+<div className="about">
+              <div className='abouts'>
+                <div className="heading">
+                    <div className='h3'>Aboute Me</div>
+                </div>
+                    <div className='para'>
+                    <p> I am 2022  passed out as I am passinated to develop, I made my dreams come true by knowing how the things work out, I enjoy solving complex problems. Frequently praised as detail-oriented by my peers, I can be relied upon to help your company achieve its goals by providing sustainable and scalable solutions. </p>
+
+                </div>
+                </div>
+                </div>
   <div className='skills-icons'>
     <div className='skills'>MY SKILLS</div>
     <div className='skill'>
@@ -124,17 +160,7 @@ export default function About()
     </Box>
     </div>
     </div>
-    <div className="about">
-              <div className='abouts'>
-                <div className="heading">
-                    <div className='h3'>Aboute Me</div>
-                </div>
-                    <div className='para'>
-                    <p> I am 2022  passed out as i am passinated to develop my  made my dreams come true by knowing how the things work out, I enjoy solving complex problems. Frequently praised as detail-oriented by my peers, I can be relied upon to help your company achieve its goals by providing sustainable and scalable solutions. </p>
-
-                </div>
-                </div>
-                </div>
+   
     </div>
     
    

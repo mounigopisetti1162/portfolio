@@ -32,6 +32,9 @@ export default function Background()
     return(
 
     <>
+    <div className="nav">
+
+   
      <nav id="navbar-example2" className="navbar px-3 mb-3">
   <a className="navbar-brand" href="#">MOUNI Gopisetti</a>
   <ul className="nav nav-pills">
@@ -51,6 +54,7 @@ export default function Background()
    
   </ul>
 </nav>
+</div>
 <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example  p-3 rounded-2" tabindex="0">
   
 
