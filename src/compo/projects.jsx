@@ -186,14 +186,21 @@ function Projects() {
 
   function change()
       {
-       document.querySelectorAll(".harrie").forEach(move => {
-        var moving_val=move.getAttribute("data-value")
-        var x=(e.clientX * moving_val)/250;
-        var y=(e.clientY * moving_val)/250;
-
-        move.style.transform="translateX("+ x +"px) translateY(" + y +"px)"
+      //  document.querySelectorAll(".harrie").forEach(move => {
+        // var moving_val=move.getAttribute("data-value")
+        var x=Event.clientX*100/window.innerWidth +"%"
+        var y=Event.clientY*100/window.innerHeight +"%"
+        // var x=(e.clientX * moving_val)/250;
+        // var y=(e.clientY * moving_val)/250;
+        for(var i=0;i<2;i++)
+        {
+          imgmovement[i].style.left=x
+          imgmovement[i].style.top=y
+          imgmovement[i].style.transform="translate(-"+ x +",-" + y +")"
+        }
+        // move.style.transform="translateX("+ x +"px) translateY(" + y +"px)"
           
-        });
+        // });
       }
   useEffect(()=>{
 
@@ -210,8 +217,11 @@ function Projects() {
   return (
 
     <div className='project' onMouseMove={change}>
-        <div className='project-headding'>
+          <div className="harry-porter">
+
           <img className='harrie' src={harry} data-value="5" alt='harry'/>
+        </div>
+        <div className='project-headding'>
         <h2 className='project-heading'> Latest work</h2>
         <p className='project-para'>
             These are the present work I have done by using all the skills which i have delepoed till now and also intrestted to develop new projects which are more advanced than these, an d the on going projects are still in process that will be added soon        </p>

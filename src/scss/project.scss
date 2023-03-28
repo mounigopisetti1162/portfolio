@@ -2,38 +2,6 @@
 // .grid-three-coloumn{
 //     grid-template-columns: repeat(4,1fr);
 // }
-
-.projects-all{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    // flex-direction: row;
-    // align-items: center;
-    // justify-content: center;
-}
-.gride{
-    display: grid;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    width: 500px;
-    transform: rotateY(0deg);
-
-}
-
-.section-project
-{
-    background: var(--bg);
-    transition: all 0.7s linear;
-}
-.containers{
-    margin: 10px 10px 10px 10px;
-    position: relative;
-    // overflow: hidden;
-    display: flex;
-    flex-direction: column;
-}
-.harrie{
-    width: 300px;
-}
 .project{
     display: flex;
     flex-direction: column;
@@ -69,6 +37,68 @@
 
 
 }
+.projects-all{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // flex-direction: row;
+    // align-items: center;
+    // justify-content: center;
+}
+.gride{
+    display: grid;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    width: 500px;
+    transform: rotateY(0deg);
+
+}
+
+.section-project
+{
+    background: var(--bg);
+    transition: all 0.7s linear;
+}
+.containers{
+    margin: 10px 10px 10px 10px;
+    position: relative;
+    // overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.harry-porter{
+    display: flex;
+    // background-color: #000000;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.harrie{
+    width: 20px;
+    transition: step-start;
+    align-items: flex-start !important;
+    justify-content: flex-start;
+}
+.project:hover .harrie{
+    width: 300px;
+  
+    // animation-direction: reverse;
+    animation: right 5s linear 3;
+// width: 500px;
+// overflow: hidden;
+}
+@keyframes right {
+  0%{
+transform: translateX(-70px,40px);
+width: 40px;
+opacity: 0.3;
+  }
+  30%{
+transform: translateZ(70px);
+  }
+  100%{
+transform: translateX(-70px);
+  }
+}
+
 .project-para{
     font-size: 1.5rem;
     font-weight: 900;
