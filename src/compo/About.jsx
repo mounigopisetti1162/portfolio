@@ -15,6 +15,9 @@ import html from '../assets/icons/html.png'
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import { useEffect } from 'react';
+import headerss from '../assets/sky/header-img.svg'
+
+// import { Sky } from './sky';
 
 function FormRow1() {
     return (
@@ -134,17 +137,24 @@ export default function About()
   },[])
     return(
         <>
-          
 <div className='skill-icon'>
 <div className="about">
               <div className='abouts'>
                 <div className="heading">
                     <div className='h3'>Aboute Me</div>
                 </div>
+                
                     <div className='para'>
                     <p> I am 2022  passed out as I am passinated to develop, I made my dreams come true by knowing how the things work out, I enjoy solving complex problems. Frequently praised as detail-oriented by my peers, I can be relied upon to help your company achieve its goals by providing sustainable and scalable solutions. </p>
 
                 </div>
+                <div className="sky">
+    <div className='astro'>
+              <img src={headerss} alt="pic"/>
+                
+        </div>
+
+    </div>
                 </div>
                 </div>
   <div className='skills-icons'>
@@ -162,7 +172,7 @@ export default function About()
     </div>
    
     </div>
-    
+  
    
             </>
     )

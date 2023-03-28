@@ -19,15 +19,17 @@ import socket from '../assets/icons/socket.png'
 import html from '../assets/icons/html.png'
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import harry from '../assets/harry/harry.png'
 import '../scss/project.scss'
 import { useEffect } from 'react';
 
 function Formrow()
 {
     return(
-        <React.Fragment className='projects-all'>
+        <div className='projects-all'>
           
-   <Grid item xs={6} className='gride'>
+   <div item xs={6} className='gride'>
+
         <span className='project'>InFi Chat</span>
         <div className='img-overlay'>
 
@@ -60,9 +62,9 @@ function Formrow()
             </div>
           </div>
         </div>   
-        </Grid>
+        </div>
 
-<Grid item xs={6} className='gride'>
+<div item xs={6} className='gride'>
         <span className='project' >Stack-OverFlow</span>
             <div className='img-overlay '>
           <img  className='image' src={stack} alt='javascript'/>
@@ -96,9 +98,9 @@ function Formrow()
             
           </div>
         </div>
-        </Grid>
+        </div>
       
-        <Grid item xs={6} className='gride'>
+        <div item xs={6} className='gride'>
         <span className='project'>URL-Shortner</span>
         <div className='img-overlay'>
         <img className='image' src={url} alt='url-shrotner'/>
@@ -138,9 +140,9 @@ function Formrow()
 
 
 
-        </Grid>
+        </div>
   
-        <Grid item xs={6} className='gride'>
+        <div item xs={6} className='gride'>
         <span className='project'>Student-Teacher</span>
         <div className='img-overlay'>
 
@@ -173,14 +175,26 @@ function Formrow()
             
           </div>
         </div>    
-        </Grid>
+        </div>
     
      
 
-        </React.Fragment>
+        </div>
     )
 }
 function Projects() {
+
+  function change()
+      {
+       document.querySelectorAll(".harrie").forEach(move => {
+        var moving_val=move.getAttribute("data-value")
+        var x=(e.clientX * moving_val)/250;
+        var y=(e.clientY * moving_val)/250;
+
+        move.style.transform="translateX("+ x +"px) translateY(" + y +"px)"
+          
+        });
+      }
   useEffect(()=>{
 
 
@@ -191,10 +205,13 @@ function Projects() {
         ScrollReveal().reveal('.project-para',{delay:300,origin:'left'})
         ScrollReveal().reveal('.containers',{delay:400,origin:'top'})
       },[])
+
+      
   return (
 
-    <div className='project'>
+    <div className='project' onMouseMove={change}>
         <div className='project-headding'>
+          <img className='harrie' src={harry} data-value="5" alt='harry'/>
         <h2 className='project-heading'> Latest work</h2>
         <p className='project-para'>
             These are the present work I have done by using all the skills which i have delepoed till now and also intrestted to develop new projects which are more advanced than these, an d the on going projects are still in process that will be added soon        </p>

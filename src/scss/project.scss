@@ -1,18 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Courgette&family=Delicious+Handrawn&family=Lobster&family=Rampart+One&family=Satisfy&family=Tilt+Prism&display=swap');
-.grid-three-coloumn{
-    grid-template-columns: repeat(4,1fr);
-}
+// .grid-three-coloumn{
+//     grid-template-columns: repeat(4,1fr);
+// }
 
 .projects-all{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // flex-direction: row;
+    // align-items: center;
+    // justify-content: center;
 }
-.grid{
-    display: flex;
-    
+.gride{
+    display: grid;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    width: 500px;
+    transform: rotateY(0deg);
+
 }
+
 .section-project
 {
     background: var(--bg);
@@ -24,6 +30,9 @@
     // overflow: hidden;
     display: flex;
     flex-direction: column;
+}
+.harrie{
+    width: 300px;
 }
 .project{
     display: flex;
@@ -38,6 +47,8 @@
     // gap: 2rem;
     width: 100%;
     margin-bottom: 10px;
+    background: url('../assets/harry/harryback.jpg');
+    background-size: cover;
     
 }
 .project-headding{
@@ -199,21 +210,30 @@ font-size: larger;
         font-size: 1.5rem !important;
     font-weight: 900;
     }
+    .projects-all{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
     .project{
         font-size: 1.2rem;
+    }
+    .gride{
+        // transform: rotateY(30deg);
+    transform: rotateY(0deg);
+
     }
     .image{
         // width: 210px !important;
     }
     .m-icons{
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
     }
     .common-heading{
         margin-left: 5px;
         margin-right: 5px;
         margin: 0;
-        color: #ffffff;
+        color: #000000;
         text-decoration: none;
     font-size: 20px;
 
@@ -232,8 +252,8 @@ font-size: larger;
 
 @media all and (max-width:680px) {
     .m-icons{
-        width: 15px;
-        height: 15px;
+        width: 20px;
+        height: 20px;
     }
     .project-heading{
         font-size: 2.5rem !important;

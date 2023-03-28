@@ -2,6 +2,8 @@
 .about{
     // position: relative;
     width: 100%;
+  // background-image:url('../assets/sky/background.png') ;
+
     // height: 100vh;
     overflow: visible;
     display: flex;
@@ -72,6 +74,9 @@ margin-top: 10px;
     align-items: center;
     justify-content: center ;
     width: 100%;
+  background-image:url('../assets/sky/background.png') ;
+  background-size: cover;
+
 }
 .skills-icons{
   display: flex;
@@ -114,6 +119,44 @@ margin-top: 10px;
 .moving-icons:hover{
   // transform: perspective(40px) rotateX(-0.6deg) rotateY(-0.5deg) scale(1.5);
   transform: rotate3d(1,1.5,0,20deg) scale(1.5);
+  
+}
+.astro{
+  // background-image:url('../assets/sky/background.png') ;
+  border-radius: 0%;
+}
+.astro img{
+animation: updown 3s linear infinite;
+width: 500px;
+}
+@keyframes updown {
+  0%{
+transform: translateY(-20px);
+  }
+  50%{
+transform: translateY(20px);
+  }
+  100%{
+transform: translateY(-20px);
+  }
+}
+.astro img:hover{
+  animation: rightleft;
+  transition: 0.7s all;
+  // width: 100px;
+  transform: translateXY(-40px);
+  // transform: translateY(-40px);
+}
+@keyframes rightleft {
+  0%{
+    transform: translateX(-40px);
+      }
+      40%{
+    transform: translateX(40px);
+      }
+      80%{
+    transform: translateX(-40px);
+      }
   
 }
 @media all and (max-width:960px)

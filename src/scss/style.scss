@@ -12,6 +12,8 @@
 }
 body{
     background: #0a2a43;
+//   background-image:url('../assets/sky/background.png') ;
+background: linear-gradient(#0a2a43,#0d3755,rgba(170,54,124),rgba(74,47,189));
     min-height: 1500px;
     display: flex;
     flex-direction: column;
