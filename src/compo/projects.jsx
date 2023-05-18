@@ -215,12 +215,13 @@ function Projects() {
 
       
   return (
+    <div className='hai'>
+<div className="harry-porter">
 
+<img className='harrie' src={harry} data-value="5" alt='harry'/>
+</div>
     <div className='project' onMouseMove={change}>
-          <div className="harry-porter">
-
-          <img className='harrie' src={harry} data-value="5" alt='harry'/>
-        </div>
+          
         <div className='project-headding'>
         <h2 className='project-heading'> Latest work</h2>
         <p className='project-para'>
@@ -243,7 +244,7 @@ function Projects() {
             </div>
         
         
-    
+            </div>
 
   )
 }
