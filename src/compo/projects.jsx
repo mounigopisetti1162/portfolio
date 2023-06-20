@@ -101,7 +101,7 @@ function Formrow()
         </div>
       
         <div item xs={6} className='gride'>
-        <span className='project'>URL-Shortner</span>
+        <span className='project'>Shopping Payment-App</span>
         <div className='img-overlay'>
         <img className='image' src={url} alt='url-shrotner'/>
         <div className='overlay'>
@@ -110,9 +110,9 @@ function Formrow()
 <div className='in-names'>
 <div className='in-name'>
 
-<a href='https://nimble-custard-91ad31.netlify.app/' target='_blank' className='common-heading'><RemoveRedEyeIcon className="eye" fontSize='large' 
-/>URL- Shortner</a>
-<a href='https://github.com/mounigopisetti1162/stack-webcode' target='_blank' className='common-heading'>
+<a href='https://phenomenal-nasturtium-a67104.netlify.app/login' target='_blank' className='common-heading'><RemoveRedEyeIcon className="eye" fontSize='large' 
+/>Payment App</a>
+<a href='https://github.com/mounigopisetti1162/payment-pro-3' target='_blank' className='common-heading'>
 <GitHubIcon className="git" fontSize='large' /></a>
 
 
