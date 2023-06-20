@@ -85,7 +85,8 @@ export default function Background()
   <GitHubIcon className='sym' sx={{ color: 'white', fontSize: 40 }} />GitHub</a>
   <a href='https://www.linkedin.com/in/mouni-chinni-973712171/' target='_blank'>
   <LinkedInIcon className='sym' sx={{ color: 'white', fontSize: 40 }}/>LinkedIn </a>
-  <a href={resume} download='resume'>
+  <a href={resume}  target='_blank' >
+    
   <FolderSpecialIcon className='sym' sx={{ color: 'white', fontSize: 40 }}/> Resume</a>
    </div>
   
