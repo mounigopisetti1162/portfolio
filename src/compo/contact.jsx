@@ -56,7 +56,7 @@ function sendmail(values)
     const renderError = (message) => <p className="help is-danger">{message}</p>;
   useEffect(()=>{
     ScrollReveal({
-      reset:true,distance:'60px',duration:2500,delay:400
+      reset:true,distance:'90px',duration:5000,delay:300
       })
       ScrollReveal().reveal('.container',{delay:300,origin:'left'})
 
