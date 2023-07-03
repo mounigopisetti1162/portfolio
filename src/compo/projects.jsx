@@ -50,16 +50,7 @@ function Formrow()
           </div>
 
 
-            <div className='inside-icons'>
-              <div className='in-icons'>
-
-             
-            <img className='m-icons' height="30" width='30' src={javascript} alt='javascript'/>
-            <img className='m-icons' height="30" width='30' src={css} alt='javascript'/>
-            <img className='m-icons' height="30" width='30' src={socket} alt='javascript'/>
-            <img className='m-icons' height="30" width='30' src={bootstrap} alt='javascript'/>
-            </div>
-            </div>
+          
           </div>
         </div>   
         </div>
@@ -83,16 +74,7 @@ function Formrow()
 </div>
 </div>
 </div>
-<div className='inside-icons'>
-              <div className='in-icons'>
 
-             
-          
-            <img className='m-icons' height="30" width='30' src={css} alt='javascript'/>
-         
-            <img className='m-icons' height="30" width='30' src={bootstrap} alt='javascript'/>
-            </div>
-            </div>
 
 
             
@@ -119,16 +101,7 @@ function Formrow()
 </div>
 </div>
 </div>
-<div className='inside-icons'>
-              <div className='in-icons'>
 
-             
-          
-            <img className='m-icons' height="50" width='50' src={nodejs} alt='javascript'/>
-         
-            <img className='m-icons' height="50" width='50' src={vercel} alt='javascript'/>
-            </div>
-            </div>
 
             
           </div>
@@ -153,25 +126,16 @@ function Formrow()
 <div className='in-names'>
 <div className='in-name'>
 
-<a href='https://animated-sunburst-1a76c7.netlify.app/' target='_blank' className='common-heading'> <RemoveRedEyeIcon className="eye" fontSize='large' 
+<a href='https://jocular-dango-fc5de2.netlify.app/' target='_blank' className='common-heading'> <RemoveRedEyeIcon className="eye" fontSize='large' 
 />Student-Teacher </a>
-<a href='https://github.com/mounigopisetti1162/stack-webcode' target='_blank' className='common-heading'>
+<a href='https://github.com/mounigopisetti1162/student-and-teacher-4th' target='_blank' className='common-heading'>
 <GitHubIcon className="git" fontSize='large' /></a>
 
 
 </div>
 </div>
 </div>
-<div className='inside-icons'>
-              <div className='in-icons'>
 
-             
-          
-            <img className='m-icons' height="30" width='30' src={react} alt='javascript'/>
-         
-            <img className='m-icons' height="30" width='30' src={materialui} alt='javascript'/>
-            </div>
-            </div>
             
           </div>
         </div>    
@@ -210,7 +174,7 @@ function Projects() {
         })
         ScrollReveal().reveal('.project-heading',{delay:300,origin:'right'})
         ScrollReveal().reveal('.project-para',{delay:300,origin:'left'})
-        ScrollReveal().reveal('.containers',{delay:400,origin:'top'})
+        // ScrollReveal().reveal('.containers',{delay:400,origin:'top'})
       },[])
 
       
@@ -225,7 +189,7 @@ function Projects() {
         <div className='project-headding'>
         <h2 className='project-heading'> Latest work</h2>
         <p className='project-para'>
-            These are the present work I have done by using all the skills which i have delepoed till now and also intrestted to develop new projects which are more advanced than these, an d the on going projects are still in process that will be added soon        </p>
+            These are the present works, I have done by using all my skills which I have delepoed till now and I am also intrestted to develop new projects which are more advanced than these, and on going projects are still in process that will be added soon        </p>
         
         <div className='containers'>
         <Box sx={{ flexGrow: 1 }}>
