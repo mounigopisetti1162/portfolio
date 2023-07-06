@@ -157,7 +157,7 @@ function sendmail(values)
   <div className='icon'>
     <a href='https://github.com/mounigopisetti1162' target='_blank'>
   <GitHubIcon sx={{ color: 'white', fontSize: 50 }} /></a>
-  <a href='https://www.linkedin.com/in/mouni-chinni-973712171/' target='_blank'>
+  <a href='https://www.linkedin.com/in/mounika-gopisetti-973712171/' target='_blank'>
   <LinkedInIcon sx={{ color: 'white', fontSize: 60 }}/> </a>
   <a href={resume} download='resume'>
   <FolderSpecialIcon sx={{ color: 'white', fontSize: 60 }}/></a>

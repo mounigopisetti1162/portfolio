@@ -83,7 +83,7 @@ export default function Background()
   <div className='icon'>
     <a href='https://github.com/mounigopisetti1162' target='_blank'>
   <GitHubIcon className='sym' sx={{ color: 'white', fontSize: 40 }} />GitHub</a>
-  <a href='https://www.linkedin.com/in/mouni-chinni-973712171/' target='_blank'>
+  <a href='https://www.linkedin.com/in/mounika-gopisetti-973712171/' target='_blank'>
   <LinkedInIcon className='sym' sx={{ color: 'white', fontSize: 40 }}/>LinkedIn </a>
   <a href={resume}  target='_blank' >
     
